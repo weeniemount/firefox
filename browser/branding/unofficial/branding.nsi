@@ -8,11 +8,11 @@
 
 # BrandFullNameInternal is used for some registry and file system values
 # instead of BrandFullName and typically should not be modified.
-!define BrandFullNameInternal "Mozilla Developer Preview"
-!define BrandFullName         "Mozilla Developer Preview"
-!define CompanyName           "mozilla.org"
-!define URLInfoAbout          "https://www.mozilla.org"
-!define HelpLink              "https://support.mozilla.org"
+!define BrandFullNameInternal "boinkwer"
+!define BrandFullName         "boinkwer"
+!define CompanyName           "boinkwer"
+!define URLInfoAbout          "https://github.com/weeniemount/firefox"
+!define HelpLink              "https://github.com/weeniemount/firefox"
 
 !define URLStubDownloadX86 "https://download.mozilla.org/?os=win&lang=${AB_CD}&product=firefox-latest"
 !define URLStubDownloadAMD64 "https://download.mozilla.org/?os=win64&lang=${AB_CD}&product=firefox-latest"
@@ -22,7 +22,7 @@
 !define Channel "unofficial"
 
 # The installer's certificate name and issuer expected by the stub installer
-!define CertNameDownload   "Mozilla Corporation"
+!define CertNameDownload   "boinkwer"
 !define CertIssuerDownload "DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1"
 
 # Dialog units are used so the UI displays correctly with the system's DPI
