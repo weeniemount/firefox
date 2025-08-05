@@ -86,6 +86,8 @@ class CrashChannel final : public nsBaseChannel {
  */
 static const RedirEntry kRedirMap[] = {
     {"about", "chrome://global/content/aboutAbout.html", 0},
+      {"hifrombonki", "chrome://global/content/aboutHiFromBonki.xhtml",
+     nsIAboutModule::ALLOW_SCRIPT},
 #ifndef MOZ_WIDGET_ANDROID
     {"addons", "chrome://mozapps/content/extensions/aboutaddons.html",
      nsIAboutModule::ALLOW_SCRIPT | nsIAboutModule::IS_SECURE_CHROME_UI},
@@ -253,9 +255,15 @@ nsAboutRedirector::NewChannel(nsIURI* aURI, nsILoadInfo* aLoadInfo,
     return NS_OK;
   }
 
+  //printf("About redirector: Looking for path: %s\n", path.get());
+
   if (path.EqualsASCII("config") &&
       !mozilla::Preferences::GetBool(ABOUT_CONFIG_ENABLED_PREF, true)) {
     return NS_ERROR_NOT_AVAILABLE;
+  }
+
+  if (path.EqualsLiteral("hifrombonki")) {
+    printf("Found hifrombonki!\n");
   }
 
   for (int i = 0; i < kRedirTotal; i++) {
