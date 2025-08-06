@@ -8,8 +8,8 @@
 
 # BrandFullNameInternal is used for some registry and file system values
 # instead of BrandFullName and typically should not be modified.
-!define BrandFullNameInternal "boinkwer"
-!define BrandFullName         "boinkwer"
+!define BrandFullNameInternal "Boinkifox"
+!define BrandFullName         "Boinkifox"
 !define CompanyName           "boinkwer"
 !define URLInfoAbout          "https://github.com/weeniemount/firefox"
 !define HelpLink              "https://github.com/weeniemount/firefox"
