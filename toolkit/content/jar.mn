@@ -6,6 +6,10 @@ toolkit.jar:
    content/global/aboutAbout.js
    content/global/aboutAbout.html
    content/global/aboutHiFromBonki.xhtml (aboutHiFromBonki.xhtml)
+   content/global/aboutCouch2048.html (aboutCouch2048.html)
+   content/global/couch.css
+   content/global/couch.js
+   content/global/sound.js
    content/global/aboutLogging/aboutLogging.html (aboutLogging/aboutLogging.html)
    content/global/aboutLogging/aboutLogging.css (aboutLogging/aboutLogging.css)
    content/global/aboutLogging/aboutLogging.mjs (aboutLogging/aboutLogging.mjs)
